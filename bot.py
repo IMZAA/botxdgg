@@ -27,7 +27,7 @@ initial_extensions = [
 intents = discord.Intents.default()
 intents.message_content = True
 
-BOT_PREFIX = '-'
+BOT_PREFIX = ','
 
 
 class ValorantBot(commands.Bot):
@@ -57,7 +57,7 @@ class ValorantBot(commands.Bot):
         
         # bot presence
         activity_type = discord.ActivityType.listening
-        await self.change_presence(activity=discord.Activity(type=activity_type, name="(╯•﹏•╰)"))
+        await self.change_presence(activity=discord.Activity(type=activity_type, name="Riot Cilent"))
     
     async def setup_hook(self) -> None:
         if self.session is None:
